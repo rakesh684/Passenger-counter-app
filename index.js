@@ -1,8 +1,14 @@
-let b=50;
-console.log(b);
-b=b+50;
-console.log(b);
-b=b-75;
-console.log(b);
-b=b+45;
-console.log(b);
+let saveEl = document.getElementById("save-el")
+let countEl = document.getElementById("count-el")
+let count=0;
+function increment(){
+    count=count+1;
+    countEl.innerText=count;
+
+}
+function save() {
+    let countStr = count + " - "
+    saveEl.textContent += countStr
+    // console.log(count);
+     
+}
